@@ -61,15 +61,18 @@ Proje Hazırlığı:
 
 Gerekli donanım (örneğin Tiva C LaunchPad) bağlanır.
 Kod, Code Composer Studio (CCS) veya benzeri bir geliştirme ortamında derlenir ve mikrodenetleyiciye yüklenir.
+
 Projenin Çalışma Aşamaları:
 
 Cihaz açıldıktan sonra kırmızı LED yanar.
 RTC 10 saniye geri sayım yapar.
 10 saniye sonra cihaz uyku modundan çıkar ve kırmızı LED söner.
+
 Dikkat Edilmesi Gerekenler
 Enerji Tüketimi: Hibernation modu cihazın minimum enerji harcamasını sağlar. Ancak diğer çevresel birimlerin kapatıldığından emin olun.
 Uyandırma Süresi: RTC veya harici pin üzerinden cihaz uyandırılabilir. Bu proje yalnızca RTC Match ile uyandırmayı kapsar.
 GPIO Bağlantıları: Kırmızı LED'in doğru GPIO pinine bağlı olduğundan emin olun (GPIO_PIN_1, Port F).
+
 Geliştirme İçin Öneriler
 Daha Fazla Uyandırma Kaynağı Ekleyin:
 Harici bir buton gibi başka bir uyandırma kaynağı eklenebilir.
@@ -77,6 +80,7 @@ Enerji Tüketim Ölçümü:
 Multimetre veya osiloskop ile enerji tüketimi ölçülebilir ve optimize edilebilir.
 RTC Match Süresini Dinamik Yapın:
 Kullanıcıdan alınan bir giriş ile RTC match süresini dinamik olarak ayarlayabilirsiniz.
+
 Desteklenen Araçlar
 Donanım: Tiva C LaunchPad (TM4C123)
 Geliştirme Ortamı: Code Composer Studio (CCS)
